@@ -8,7 +8,54 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  
+  <h1 class="title">
+    Update
+    <span class="title-color">CSS</span>
+    Variable With
+    <span class="title-color">JS</span>
+  </h1>
+
+  <div class="controls">
+    <label for="spacing">
+      Spacing:
+    </label>
+    <!-- data- html自定义属性   HTMLElement.dataset 属性可以读取  -->
+    <input id="spacing" name="spacing" type="range" min="10" max="200" value="10" data-sizing="px">
+
+    <label for="blur">
+      Blur:
+    </label>
+    <input id="blur" name="blur" type="range" min="0" max="25" value="10" data-sizing="px" >
+
+    <label for="base">
+      Base Color:
+    </label>
+    <input id="base" name="base" type="color" value="#f7c744">
+  </div>
+
+  <!-- 获取控制值 -->
+  <div class="result">
+    <div class="text">
+      spacing: 
+      <span id="label_spacing" class="info">
+        10px
+      </span>
+    </div>
+    <div class="text">
+      blur:
+      <span id="label_blur" class="info">
+        10px
+      </span>
+    </div>
+    <div class="text">
+      base:
+      <span id="label_base" class="info">
+        #f7c744
+      </span>
+    </div>
+  </div>
+
+  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
 </body>
 <script src="./index.js"></script>
 </html>

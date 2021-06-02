@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+  background: #203447;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.title {
+  color: #fff;
+}
+.title-color {
+  color: #f7c744;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
+
+.result {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.text {
+  font-size: 38px;
+  height: 50px;
+  line-height: 50px;
+  color: #000;
+}
+
+.info {
+  font-weight: 500;
+  color: var(--base);
+}
+
+/*
+  :root 这个 CSS 伪类匹配文档树的根元素。
+  对于 HTML 来说，:root 表示 <html> 元素，
+  除了优先级更高之外，与 html 选择器相同。
+*/
+
+:root {
+  --spacing: 50px;
+  --blur: 10px;
+  --base: #f7c744;
+}
+
+/* var()函数可以代替元素中任何属性中的值的任何部分 */
+
+img {
+  padding: var(--spacing);
+  background: var(--blur);
+  filter: blur(var(--base));
+}
+
+
+
