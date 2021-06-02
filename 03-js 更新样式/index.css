@@ -7,6 +7,18 @@ body {
   font-weight: 100;
 }
 
+/*
+  :root 这个 CSS 伪类匹配文档树的根元素。
+  对于 HTML 来说，:root 表示 <html> 元素，
+  除了优先级更高之外，与 html 选择器相同。
+*/
+
+:root {
+  --spacing: 10px;
+  --blur: 3px;
+  --base: #f7c744;
+}
+
 .title {
   color: #fff;
 }
@@ -26,6 +38,7 @@ input {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  margin-bottom: 40px;
 }
 
 .text {
@@ -40,24 +53,21 @@ input {
   color: var(--base);
 }
 
-/*
-  :root 这个 CSS 伪类匹配文档树的根元素。
-  对于 HTML 来说，:root 表示 <html> 元素，
-  除了优先级更高之外，与 html 选择器相同。
-*/
-
-:root {
-  --spacing: 50px;
-  --blur: 10px;
-  --base: #f7c744;
-}
-
 /* var()函数可以代替元素中任何属性中的值的任何部分 */
 
-img {
+.show {
+  width: 671px;
+  background: var(--base);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  max-width: calc( 100% - var(--spacing)*2 );
+  filter: blur(var(--blur));
+  background: var(--base);
   padding: var(--spacing);
-  background: var(--blur);
-  filter: blur(var(--base));
 }
 
 

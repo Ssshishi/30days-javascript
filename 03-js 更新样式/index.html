@@ -20,12 +20,12 @@
       Spacing:
     </label>
     <!-- data- html自定义属性   HTMLElement.dataset 属性可以读取  -->
-    <input id="spacing" name="spacing" type="range" min="10" max="200" value="10" data-sizing="px">
+    <input id="spacing" name="spacing" type="range" min="1" max="100" value="10" data-sizing="px">
 
     <label for="blur">
       Blur:
     </label>
-    <input id="blur" name="blur" type="range" min="0" max="25" value="10" data-sizing="px" >
+    <input id="blur" name="blur" type="range" min="0" max="10" value="3" data-sizing="px" >
 
     <label for="base">
       Base Color:
@@ -55,7 +55,10 @@
     </div>
   </div>
 
-  <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  <div class="show">
+    <img class="img" src="https://source.unsplash.com/7bwQXzbF6KE/800x500">
+  </div>
+
 </body>
 <script src="./index.js"></script>
 </html>
